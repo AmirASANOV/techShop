@@ -22,6 +22,9 @@ const Login = () => {
       .then((res) => {
         dispatch(setToken(res.data.token));
         router.push("/");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
       })
       .catch((err) => {
         console.log(err);

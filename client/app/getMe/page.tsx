@@ -35,6 +35,9 @@ const GetMe = () => {
   const logOut = () => {
     dispatch(clearToken());
     setUser({} as IUser);
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
     router.push("/");
   };
 
@@ -50,7 +53,6 @@ const GetMe = () => {
         className={s.button}
         variant="contained"
         style={{ background: "teal" }}
-        href="#contained-buttons"
         onClick={logOut}
       >
         LogOut

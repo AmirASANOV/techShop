@@ -48,7 +48,11 @@ const Header = () => {
         <p>Наши гарантии</p>
         <p>Почему мы?</p>
         <p>Контакты</p>
-        <Link href="/getMe">Личный кабинет</Link>
+        {isVisible ? (
+          <Link href="/getMe">Личный кабинет</Link>
+        ) : (
+          <Link href="/login">Логин</Link>
+        )}
       </div>
 
       <div className={s.header}>
