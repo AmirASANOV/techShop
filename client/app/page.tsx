@@ -4,6 +4,7 @@ import s from "./Products.module.scss";
 import axios from "axios";
 import CardItem from "@/components/CardItem/CardItem";
 import Popular from "@/components/Popular/Popular";
+import Footer from "@/components/Footer/Footer";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -47,7 +48,6 @@ const Products = () => {
 
       <div style={{ marginBottom: "20px" }}>
         <Popular />
-        
       </div>
 
       <h1>Products:</h1>
@@ -57,6 +57,7 @@ const Products = () => {
           <CardItem key={item.id} data={item} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

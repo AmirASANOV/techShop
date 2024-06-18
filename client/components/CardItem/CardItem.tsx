@@ -19,7 +19,8 @@ const CardItem: FC<IProps> = (props) => {
   const [isClicked, setIsClicked] = React.useState(false);
   const dispatch = useAppDispatch();
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     const data = {
       id: props.data.id,
       imageUrl: props.data.imageUrl,
@@ -50,8 +51,7 @@ const CardItem: FC<IProps> = (props) => {
             className={s.button}
             variant="contained"
             style={{ background: "teal" }}
-            onClick={handleClick}
-            href="#"
+            onClick={(e) => handleClick(e)}
           >
             buy
           </Button>
