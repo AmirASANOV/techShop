@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 10px auto;
+  background: radial-gradient(
+    33.06% 190.55% at 66.94% 44.11%,
+    #7fb1ed 0%,
+    #437fc8 34.66%,
+    rgba(28, 80, 143, 0.95) 72.16%,
+    #1c4e8a 87.8%,
+    #1a467c 100%
+  );
+  height: 300px;
+  border-radius: 10px;
+
+  .title {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .tech {
+    height: 90%;
+    margin-right: 30px;
+  }
+}

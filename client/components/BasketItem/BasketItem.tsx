@@ -7,10 +7,11 @@ interface IProps {
   data: any;
 }
 const BasketItem: FC<IProps> = ({ data }) => {
+  console.log(data);
   return (
     <div className={s.wrapper}>
-      <Image
-        src={`${data.imageUrl}.jpg`}
+      <img
+        src={`${data.imageUrl}.webp`}
         alt="Description of the image"
         sizes="(100%, 100%)"
         width={100}
@@ -20,7 +21,6 @@ const BasketItem: FC<IProps> = ({ data }) => {
       <div className={s.text}>
         <div>
           <h3>{data.title}</h3>
-          <p>Description</p>
         </div>
         <p>{data.price}</p>
       </div>

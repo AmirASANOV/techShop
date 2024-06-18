@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import s from "./Products.module.scss";
 import axios from "axios";
 import CardItem from "@/components/CardItem/CardItem";
+import Popular from "@/components/Popular/Popular";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -45,28 +46,8 @@ const Products = () => {
       </div>
 
       <div style={{ marginBottom: "20px" }}>
-        <h1 style={{ marginBottom: "20px" }}>Популярное:</h1>
-
-        <div style={{ display: "flex", columnGap: "20px" }}>
-          <CardItem
-            key="3"
-            data={{
-              id: 0,
-              imageUrl: "/images/7",
-              name: "Посудомоечная Машина BOSCH",
-              price: 13000,
-            }}
-          />
-          <CardItem
-            key="3"
-            data={{
-              id: 0,
-              imageUrl: "/images/9",
-              name: "Чайник Aceline",
-              price: 9000,
-            }}
-          />
-        </div>
+        <Popular />
+        
       </div>
 
       <h1>Products:</h1>
