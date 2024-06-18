@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  height: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+}

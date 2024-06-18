@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-between;
+  margin: 10px auto;
+  align-items: center;
+
+  .button {
+    width: 100px;
+    height: 30px;
+  }
+}
